@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: 100px auto;
+
+}
+/* navbar */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ccc;
+}
+nav .nav-right ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-right i{
+    display: none;
+}
+nav .nav-left a {
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    transition: 0.7s;
+   
+}
+nav .nav-left a:hover{
+    background-color: #ce7171;
+
+}
+nav .nav-left a span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+nav .nav-right ul a{
+    font-size: 18px;
+    color: #000;
+    padding: 10px;
+    transition: 0.7s;
+}
+nav .nav-right ul a:hover{
+    background-color: #b54242;
+}
+
+    /* header */
+
+    header{
+        background-image: url(imgs/header.jpg);
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+     
+    }
+    header h2{
+        font-size: 40px;
+        color: #fdfcff;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+
+    }
+    header h2 span{
+        background-color: #000;
+        padding: 10px;
+        opacity: 0.7;
+    }
+    /* projects */
+
+    .houses{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        
+        
+    }
+.house{
+    width: 24%;
+    position: relative;
+} 
+.house img{
+    width: 100%;
+}
+.house p{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color:aliceblue;
+    padding: 10px;
+}
+hr{
+    margin: 30px;
+    opacity: 0.2;
+}
+.main-p{
+    line-height: 1.8;
+    font-size: 18px;
+    color: grey;
+}
+
+.chars{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.char{
+    width: 24%;
+}
+  
+.char > *{
+    margin-bottom: 10px;
+}
+.char img{
+    width: 100%;
+}
+.char h4{
+    opacity: 0.5;
+}
+.char p{
+    line-height: 1.5;
+}
+.char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.char button:hover{
+    background-color: gray;
+
+}
+/* contact */
+.Contact p{
+    margin-bottom: 40px;
+
+}
+.Contact input{
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    
+}
+.Contact button{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000;
+    color: aliceblue;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Contact button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/* map */
+.map img{
+    width: 100%;
+}
+/* footer */
+footer{
+    padding: 20px;
+    background-color: #000;
+}
+footer p{
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    
+
+}
+@media screen and (max-width : 480px) {
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    .nav-right i{
+        display: block;
+    }
+header h2{
+    left: 10%;
+}
+    
+    .houses{
+        flex-direction: column;
+    }
+    .house{
+        width: 100%;
+    }
+    .chars{
+        flex-direction: column;
+    }
+    .char{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width : 768px){
+
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    .nav-right i{
+        display: block;
+    }
+
+    header h2{
+        left: 40%;
+    }
+    .house{
+        width: 48%;
+    }
+    .char{
+        width: 48%;
+    }
+
+}
